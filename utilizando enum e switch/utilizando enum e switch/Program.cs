@@ -36,6 +36,25 @@ namespace utilizando_enum_e_switch
                     Console.WriteLine("Tá tirando um pêlo com sucesso");
                     break;
             }
+            string[] nomes = {"Diego", "Diana", "Marlene", "Domingos", "Kaua", "Valentina"};
+
+            foreach (string nome in nomes) //FOREACH, como o nome diz, para cada nome no ARRAY 'nomes' o bloco irá exibir o valor correspondente
+            {
+                Console.WriteLine(nome);
+                Console.WriteLine();
+            }
+
+            for (int i = 0; i < nomes.Length; i++) //buscando valores do ARRAY com os mesmos resultados acima, porém usando FOR
+            {
+                Console.WriteLine(nomes[i]);
+                Console.WriteLine();
+            }
+
+            for (int i = 5; i > 0 ; i--)
+            {
+                Console.WriteLine(nomes[i]);
+                Console.WriteLine();
+            }
         }
     }
 }
